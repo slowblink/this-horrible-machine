@@ -22,3 +22,8 @@ project/assembly_name="this horrible machine"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/qodot/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+textures/canvas_textures/default_texture_repeat=1

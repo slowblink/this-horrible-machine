@@ -1,3 +1,56 @@
-[gd_scene format=3 uid="uid://cnudovd7nbywd"]
+[gd_scene load_steps=7 format=3 uid="uid://cnudovd7nbywd"]
+
+[ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_yeb77"]
+[ext_resource type="Resource" uid="uid://7h57nuq1xmoi" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_hq4mm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_531qb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6kllf"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f7das"]
+_surfaces = [{
+"aabb": AABB(-28, -1, -35, 83, 2.00001, 104),
+"attribute_data": PackedByteArray(0, 0, 224, 67, 0, 0, 128, 193, 0, 0, 224, 67, 0, 0, 128, 65, 0, 0, 92, 196, 0, 0, 128, 65, 0, 0, 92, 196, 0, 0, 128, 193, 0, 0, 12, 196, 0, 0, 128, 193, 0, 0, 138, 68, 0, 0, 128, 193, 0, 0, 138, 68, 0, 0, 128, 65, 0, 0, 12, 196, 0, 0, 128, 65, 0, 0, 12, 68, 0, 0, 92, 196, 0, 0, 12, 68, 0, 0, 224, 67, 0, 0, 138, 196, 0, 0, 224, 67, 0, 0, 138, 196, 0, 0, 92, 196, 0, 0, 12, 196, 0, 0, 92, 196, 0, 0, 138, 68, 0, 0, 92, 196, 0, 0, 138, 68, 0, 0, 224, 67, 0, 0, 12, 196, 0, 0, 224, 67, 0, 0, 12, 68, 0, 0, 128, 193, 0, 0, 12, 68, 0, 0, 128, 65, 0, 0, 138, 196, 0, 0, 128, 65, 0, 0, 138, 196, 0, 0, 128, 193, 0, 0, 224, 195, 0, 0, 128, 193, 0, 0, 92, 68, 0, 0, 128, 193, 0, 0, 92, 68, 0, 0, 128, 65, 0, 0, 224, 195, 0, 0, 128, 65),
+"format": 4119,
+"index_count": 36,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 4, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 8, 0, 10, 0, 11, 0, 12, 0, 13, 0, 14, 0, 12, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 16, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 20, 0, 22, 0, 23, 0),
+"material": SubResource("StandardMaterial3D_6kllf"),
+"name": "checkerboard",
+"primitive": 3,
+"vertex_count": 24,
+"vertex_data": PackedByteArray(0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 12, 194, 255, 255, 255, 255, 0, 0, 255, 191, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 12, 194, 255, 255, 255, 255, 0, 0, 255, 191, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 12, 194, 255, 255, 255, 255, 0, 0, 255, 191, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 12, 194, 255, 255, 255, 255, 0, 0, 255, 191, 0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 12, 194, 0, 0, 255, 127, 255, 127, 255, 191, 0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 138, 66, 0, 0, 255, 127, 255, 127, 255, 191, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 138, 66, 0, 0, 255, 127, 255, 127, 255, 191, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 12, 194, 0, 0, 255, 127, 255, 127, 255, 191, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 12, 194, 255, 127, 0, 0, 255, 255, 255, 255, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 12, 194, 255, 127, 0, 0, 255, 255, 255, 255, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 138, 66, 255, 127, 0, 0, 255, 255, 255, 255, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 138, 66, 255, 127, 0, 0, 255, 255, 255, 255, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 12, 194, 255, 127, 255, 255, 255, 127, 255, 191, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 138, 66, 255, 127, 255, 255, 255, 127, 255, 191, 0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 138, 66, 255, 127, 255, 255, 255, 127, 255, 191, 0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 12, 194, 255, 127, 255, 255, 255, 127, 255, 191, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 12, 194, 255, 255, 255, 127, 255, 255, 255, 255, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 12, 194, 255, 255, 255, 127, 255, 255, 255, 255, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 138, 66, 255, 255, 255, 127, 255, 255, 255, 255, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 138, 66, 255, 255, 255, 127, 255, 255, 255, 255, 0, 0, 224, 193, 0, 0, 128, 63, 0, 0, 138, 66, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 92, 66, 0, 0, 128, 63, 0, 0, 138, 66, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 92, 66, 0, 0, 128, 191, 0, 0, 138, 66, 255, 127, 255, 127, 255, 255, 255, 191, 0, 0, 224, 193, 0, 0, 128, 191, 0, 0, 138, 66, 255, 127, 255, 127, 255, 255, 255, 191)
+}]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ur3fl"]
+points = PackedVector3Array(-28, 1, -35, -28, -1, -35, 55, -1, -35, 55, 1, -35, -28, 1, 69, -28, -1, 69, 55, -1, 69, 55, 1, 69)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="QodotMap" type="Node3D" parent="."]
+script = ExtResource("1_yeb77")
+map_file = "C:/Users/aaron/Documents/GitHub/this-horrible-machine/project/levels/test map.map"
+inverse_scale_factor = 16.0
+entity_fgd = ExtResource("2_hq4mm")
+base_texture_dir = "res://textures"
+texture_file_extensions = PackedStringArray("png")
+worldspawn_layers = []
+brush_clip_texture = "special/clip"
+face_skip_texture = "special/skip"
+texture_wads = []
+material_file_extension = "tres"
+unshaded = false
+default_material_albedo_uniform = ""
+default_material = SubResource("StandardMaterial3D_531qb")
+uv_unwrap_texel_size = 1.0
+print_profiling_data = false
+use_trenchbroom_group_hierarchy = false
+tree_attach_batch_size = null
+set_owner_batch_size = 1000
+
+[node name="entity_0_worldspawn" type="StaticBody3D" parent="QodotMap"]
+
+[node name="entity_0_mesh_instance" type="MeshInstance3D" parent="QodotMap/entity_0_worldspawn"]
+mesh = SubResource("ArrayMesh_f7das")
+
+[node name="entity_0_brush_0_collision_shape" type="CollisionShape3D" parent="QodotMap/entity_0_worldspawn"]
+shape = SubResource("ConvexPolygonShape3D_ur3fl")
