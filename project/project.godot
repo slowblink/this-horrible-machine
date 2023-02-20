@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="this horrible machine"
-config/features=PackedStringArray("4.0", "Forward Plus")
+run/main_scene="res://test_scene.tscn"
+config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="this horrible machine"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/qodot/plugin.cfg")
