@@ -1,14 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://5rntmwurwuxo"]
+[gd_scene load_steps=5 format=3 uid="uid://dxvfma808isdu"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_4q8cc"]
 
-[node name="Main" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sclrw"]
+
+[sub_resource type="Sky" id="Sky_8rava"]
+sky_material = SubResource("ProceduralSkyMaterial_sclrw")
+
+[sub_resource type="Environment" id="Environment_ggmr7"]
+background_mode = 2
+sky = SubResource("Sky_8rava")
+
+[node name="Main" type="Node"]
 script = ExtResource("1_4q8cc")
 
 [node name="HUD" type="Control" parent="."]
@@ -23,22 +26,16 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="LoadTestScene" type="Button" parent="Menu"]
-layout_mode = 0
-offset_left = 121.0
-offset_top = 62.0
-offset_right = 245.0
-offset_bottom = 95.0
-text = "load test scene"
-
 [node name="Button2" type="Button" parent="Menu"]
-layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+text = "load map"
 
 [node name="Main3D" type="Node3D" parent="."]
 
 [node name="Camera3D" type="Camera3D" parent="Main3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.98184)
+transform = Transform3D(1, 0, 0, 0, 0.905458, 0.424436, 0, -0.424436, 0.905458, 0, 5.77546, 11.0122)
+environment = SubResource("Environment_ggmr7")
+current = true
 
-[connection signal="pressed" from="Menu/LoadTestScene" to="." method="_on_load_test_scene_pressed"]
+[connection signal="pressed" from="Menu/Button2" to="." method="_on_button_2_pressed"]

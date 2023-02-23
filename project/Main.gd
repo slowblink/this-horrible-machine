@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 @onready var hud : Control = $HUD
 @onready var menu : Control = $Menu
@@ -24,5 +24,6 @@ func load_level(level_name : String):
 		main_3d.add_child(level_instance)
 
 
-func _on_load_test_scene_pressed():
+
+func _on_button_2_pressed():
 	load_level("test_scene")
