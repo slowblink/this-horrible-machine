@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3l663kwt3rdj"
-path="res://.godot/imported/broken_down_concrete1_Roughness.png-21586707d3c3c09e52c304c9630eb3cc.ctex"
+uid="uid://p2r83318s38i"
+path="res://.godot/imported/checkerboard_material.png-e76f3ec476e2eb791bf4a3456c3a4e07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://modules/common/textures/broken_down_concrete1_Roughness.png"
-dest_files=["res://.godot/imported/broken_down_concrete1_Roughness.png-21586707d3c3c09e52c304c9630eb3cc.ctex"]
+source_file="res://modules/common/textures/blockout/checkerboard_material.png"
+dest_files=["res://.godot/imported/checkerboard_material.png-e76f3ec476e2eb791bf4a3456c3a4e07.ctex"]
 
 [params]
 

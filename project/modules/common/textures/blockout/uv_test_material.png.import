@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cir82jvk4mmmj"
-path="res://.godot/imported/broken_down_concrete1_ao.png-d7cf0970619e864c67efb81bb8ca3b91.ctex"
+uid="uid://deh72ff4se7ti"
+path="res://.godot/imported/uv_test_material.png-7454bf1d9bc78b205d267d980e8d569a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://modules/common/textures/broken_down_concrete1_ao.png"
-dest_files=["res://.godot/imported/broken_down_concrete1_ao.png-d7cf0970619e864c67efb81bb8ca3b91.ctex"]
+source_file="res://modules/common/textures/blockout/uv_test_material.png"
+dest_files=["res://.godot/imported/uv_test_material.png-7454bf1d9bc78b205d267d980e8d569a.ctex"]
 
 [params]
 

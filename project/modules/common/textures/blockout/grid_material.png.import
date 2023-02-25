@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmm5jinfea3lp"
-path="res://.godot/imported/broken_down_concrete1_Height.png-d0a96d5f9a7ff1bd1b507f23bffaa3ec.ctex"
+uid="uid://c18qda0jqda13"
+path="res://.godot/imported/grid_material.png-474a0e1bb9b447dceaa9f8f1f45d7598.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://modules/common/textures/broken_down_concrete1_Height.png"
-dest_files=["res://.godot/imported/broken_down_concrete1_Height.png-d0a96d5f9a7ff1bd1b507f23bffaa3ec.ctex"]
+source_file="res://modules/common/textures/blockout/grid_material.png"
+dest_files=["res://.godot/imported/grid_material.png-474a0e1bb9b447dceaa9f8f1f45d7598.ctex"]
 
 [params]
 
