@@ -17,13 +17,12 @@ func unload_level():
 
 func load_level(level_name : String):
 	unload_level()
-	var level_path := "res://levels/%s.tscn" % level_name
+	var level_path := "res://modules/levels/%s/%s.tscn" % [level_name, level_name]
+	print(level_path)
 	var level_resource := load(level_path)
 	if(level_resource):
 		level_instance = level_resource.instantiate()
 		main_3d.add_child(level_instance)
 
-
-
 func _on_button_2_pressed():
-	load_level("test_scene")
+	load_level("test_chamber")

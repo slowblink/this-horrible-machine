@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://bd8ypcuof63id"
+path="res://.godot/imported/test_chamber.map-3a1cebe1a27699eb6195873123441bcf.tres"
+
+[deps]
+
+source_file="res://modules/levels/test_chamber/test_chamber.map"
+dest_files=["res://.godot/imported/test_chamber.map-3a1cebe1a27699eb6195873123441bcf.tres"]
+
+[params]
+

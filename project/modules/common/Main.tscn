@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxvfma808isdu"]
+[gd_scene load_steps=5 format=3 uid="uid://dlflx40l6pfg2"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_4q8cc"]
+[ext_resource type="Script" path="res://modules/common/Main.gd" id="1_cg2us"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sclrw"]
 
@@ -12,7 +12,7 @@ background_mode = 2
 sky = SubResource("Sky_8rava")
 
 [node name="Main" type="Node"]
-script = ExtResource("1_4q8cc")
+script = ExtResource("1_cg2us")
 
 [node name="HUD" type="Control" parent="."]
 layout_mode = 3
@@ -27,6 +27,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button2" type="Button" parent="Menu"]
+layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 text = "load map"
