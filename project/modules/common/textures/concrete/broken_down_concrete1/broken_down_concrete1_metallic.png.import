@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duymo1y3ebsjf"
-path.s3tc="res://.godot/imported/broken_down_concrete1_albedo.png-2be5f490f573856ef3b8af593e96770a.s3tc.ctex"
+uid="uid://cpy3lxsci0dfq"
+path.s3tc="res://.godot/imported/broken_down_concrete1_metallic.png-f6a09cbe1b336b8229f17f815e6030c2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://modules/common/textures/broken_down_concrete1_albedo.png"
-dest_files=["res://.godot/imported/broken_down_concrete1_albedo.png-2be5f490f573856ef3b8af593e96770a.s3tc.ctex"]
+source_file="res://modules/common/textures/concrete/broken_down_concrete1/broken_down_concrete1_metallic.png"
+dest_files=["res://.godot/imported/broken_down_concrete1_metallic.png-f6a09cbe1b336b8229f17f815e6030c2.s3tc.ctex"]
 
 [params]
 
