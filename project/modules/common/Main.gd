@@ -4,6 +4,7 @@ extends Node
 @onready var menu : Control = $Menu
 @onready var main_3d : Node3D = $Main3D
 @onready var camera : Camera3D = $Main3D/Camera3D
+@onready var button : Button = $Menu/Button2
 
 var level_instance : Node3D 
 
@@ -26,3 +27,4 @@ func load_level(level_name : String):
 
 func _on_button_2_pressed():
 	load_level("test_chamber")
+	button.queue_free()
