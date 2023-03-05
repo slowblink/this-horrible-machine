@@ -1,15 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlflx40l6pfg2"]
+[gd_scene load_steps=2 format=3 uid="uid://dlflx40l6pfg2"]
 
 [ext_resource type="Script" path="res://modules/common/Main.gd" id="1_cg2us"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sclrw"]
-
-[sub_resource type="Sky" id="Sky_8rava"]
-sky_material = SubResource("ProceduralSkyMaterial_sclrw")
-
-[sub_resource type="Environment" id="Environment_ggmr7"]
-background_mode = 2
-sky = SubResource("Sky_8rava")
 
 [node name="Main" type="Node"]
 script = ExtResource("1_cg2us")
@@ -33,10 +24,5 @@ offset_bottom = 8.0
 text = "load map"
 
 [node name="Main3D" type="Node3D" parent="."]
-
-[node name="Camera3D" type="Camera3D" parent="Main3D"]
-transform = Transform3D(1, 0, 0, 0, 0.905458, 0.424436, 0, -0.424436, 0.905458, 0, 5.77546, 11.0122)
-environment = SubResource("Environment_ggmr7")
-current = true
 
 [connection signal="pressed" from="Menu/Button2" to="." method="_on_button_2_pressed"]
