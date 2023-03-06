@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_yeb77"]
 [ext_resource type="Resource" uid="uid://7h57nuq1xmoi" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_mdg5r"]
-[ext_resource type="Material" path="res://modules/common/textures/blockout/uv_test_material.tres" id="3_h5qeq"]
+[ext_resource type="Material" uid="uid://de2fgbdcpjq7i" path="res://modules/common/textures/blockout/uv_test_material.tres" id="3_h5qeq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbjak"]
 
@@ -50,7 +50,7 @@ points = PackedVector3Array(-64, 32, -64, -64, -16, -64, -48, -16, -64, -48, 32,
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t583l"]
 points = PackedVector3Array(-64, 32, 120, -64, -16, 120, 64, -16, 120, 64, 32, 120, -64, 32, 136, -64, -16, 136, 64, -16, 136, 64, 32, 136)
 
-[node name="Node3D" type="Node3D"]
+[node name="test_chamber" type="Node3D"]
 
 [node name="QodotMap" type="Node3D" parent="."]
 script = ExtResource("1_yeb77")
