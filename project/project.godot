@@ -21,7 +21,7 @@ project/assembly_name="this horrible machine"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/qodot/plugin.cfg", "res://addons/character-controller/plugin.cfg")
+enabled=PackedStringArray("res://addons/qodot/plugin.cfg", "res://addons/character-controller/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg")
 
 [input]
 
