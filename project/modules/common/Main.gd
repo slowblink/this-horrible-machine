@@ -3,7 +3,6 @@ extends Node
 @onready var hud : Control = $HUD
 @onready var menu : Control = $Menu
 @onready var main_3d : Node3D = $Main3D
-@onready var camera : Camera3D = $Main3D/Camera3D # TODO maybe get rid of line 6 since I'm not using it anymore?
 @onready var button : Button = $Menu/Button2
 
 var level_instance : Node3D 
