@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlflx40l6pfg2"]
+[gd_scene load_steps=4 format=3 uid="uid://dlflx40l6pfg2"]
 
 [ext_resource type="Script" path="res://modules/common/Main.gd" id="1_cg2us"]
 [ext_resource type="Script" path="res://modules/common/HUD.gd" id="2_kw2hq"]
+[ext_resource type="Script" path="res://modules/ui/Menu.gd" id="3_lmnd4"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_cg2us")
@@ -18,6 +19,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("3_lmnd4")
 
 [node name="Button2" type="Button" parent="Menu"]
 layout_mode = 0

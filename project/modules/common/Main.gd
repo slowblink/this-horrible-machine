@@ -33,3 +33,6 @@ func _on_button_2_pressed():
 	load_level("test_chamber")
 	load_player()
 	button.queue_free()
+
+func _input(quit_game):
+	get_tree

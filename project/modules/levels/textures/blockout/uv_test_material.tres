@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://de2fgbdcpjq7i"]
-
-[ext_resource type="Texture2D" uid="uid://eoqc6t75ucre" path="res://addons/qodot/textures/materials/uv_test_material.png" id="1"]
-
-[resource]
-albedo_texture = ExtResource("1")
-roughness = 0.6
