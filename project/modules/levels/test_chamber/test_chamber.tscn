@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://dsefaq8mi2gh1"]
+[gd_scene load_steps=102 format=3 uid="uid://dsefaq8mi2gh1"]
 
 [ext_resource type="Script" path="res://addons/qodot/src/nodes/qodot_map.gd" id="1_yeb77"]
 [ext_resource type="Resource" uid="uid://7h57nuq1xmoi" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="2_mdg5r"]
@@ -13,6 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://1xmjwo3vsgpf" path="res://modules/levels/textures/_prototype/green/slowblink_512.png" id="10_njtm3"]
 [ext_resource type="Texture2D" uid="uid://cckq85l8ua2si" path="res://modules/levels/textures/_prototype/brown/slowblink_512.png" id="12_wf4vq"]
 [ext_resource type="Texture2D" uid="uid://vnwehc5um0gf" path="res://modules/levels/textures/_prototype/brown/slowblink_256.png" id="13_ydn5u"]
+
+[sub_resource type="Sky" id="Sky_0alf1"]
+
+[sub_resource type="Environment" id="Environment_j8s22"]
+background_mode = 2
+sky = SubResource("Sky_0alf1")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbjak"]
 
@@ -394,6 +400,9 @@ points = PackedVector3Array(64, 256, 112, 64, 192, 112, 128, 192, 112, 128, 224,
 
 [node name="Node3D" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j8s22")
+
 [node name="QodotMap" type="Node3D" parent="."]
 script = ExtResource("1_yeb77")
 map_file = "C:/Users/aaron/Documents/GitHub/this-horrible-machine/project/modules/levels/test_chamber/test_chamber.map"
@@ -640,5 +649,9 @@ shape = SubResource("ConvexPolygonShape3D_77hlw")
 shape = SubResource("ConvexPolygonShape3D_5ibw4")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.1591, -19.0217)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30.1591, -22.9102)
 omni_range = 58.9184
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.894794, -0.236928, -0.378429, 0.446479, 0.474831, 0.758414, 0, -0.847585, 0.530659, 0, 15.8227, 12.5967)
+shadow_enabled = true

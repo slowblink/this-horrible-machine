@@ -3,7 +3,8 @@ extends Node
 @onready var hud : Control = $HUD
 @onready var menu : Control = $Menu
 @onready var main_3d : Node3D = $Main3D
-@onready var button : Button = $Menu/Button2
+@onready var button = $Menu/Button
+@onready var button2 : Button = $Menu/Button2
 
 var level_instance : Node3D 
 var player_instance : Node3D
@@ -32,7 +33,18 @@ func load_player():
 func _on_button_2_pressed():
 	load_level("test_chamber")
 	load_player()
-	button.queue_free()
+	close_load_menu()
 
 func _input(quit_game):
 	get_tree
+
+
+func _on_button_pressed():
+	load_level("tutorial_island")
+	load_player()
+	close_load_menu()
+
+func close_load_menu():
+	button.queue_free()
+	button2.queue_free()
+	pass

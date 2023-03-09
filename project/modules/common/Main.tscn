@@ -21,12 +21,23 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_lmnd4")
 
+[node name="Button" type="Button" parent="Menu"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 13.0
+offset_right = 153.0
+offset_bottom = 44.0
+text = "load tutorial island"
+
 [node name="Button2" type="Button" parent="Menu"]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "load map"
+offset_left = 1.0
+offset_top = 64.0
+offset_right = 150.0
+offset_bottom = 95.0
+text = "load test chamber"
 
 [node name="Main3D" type="Node3D" parent="."]
 
+[connection signal="pressed" from="Menu/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Menu/Button2" to="." method="_on_button_2_pressed"]

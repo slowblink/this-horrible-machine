@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://df2tbgbdnewve"]
+
+[ext_resource type="Texture2D" uid="uid://dsgg30yvcua01" path="res://modules/levels/textures/iron/rustediron-streaks.png" id="1_md4a3"]
+[ext_resource type="Texture2D" uid="uid://whw7texjfxp5" path="res://modules/levels/textures/iron/rustediron-streaks/rustediron-streaks_metallic.png" id="2_qbdam"]
+[ext_resource type="Texture2D" uid="uid://vvry2lhlpmct" path="res://modules/levels/textures/iron/rustediron-streaks/rustediron-streaks_normal.png" id="3_aye6x"]
+[ext_resource type="Texture2D" uid="uid://hfnuak8lh4fr" path="res://modules/levels/textures/iron/rustediron-streaks/rustediron-streaks_roughness.png" id="4_5s4qu"]
+
+[resource]
+albedo_texture = ExtResource("1_md4a3")
+metallic_texture = ExtResource("2_qbdam")
+roughness_texture = ExtResource("4_5s4qu")
+normal_enabled = true
+normal_texture = ExtResource("3_aye6x")
+texture_filter = 0
