@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://tqqj2et020mx"]
+
+[ext_resource type="Texture2D" uid="uid://bth24trqe4ggx" path="res://modules/levels/textures/panel/sci-fi-panel1.png" id="1_kb7x1"]
+[ext_resource type="Texture2D" uid="uid://bla523uu0oq25" path="res://modules/levels/textures/panel/sci-fi-panel1/sci-fi-panel1_height.png" id="2_4powj"]
+[ext_resource type="Texture2D" uid="uid://chtmeuum417kf" path="res://modules/levels/textures/panel/sci-fi-panel1/sci-fi-panel1_normal.png" id="3_86par"]
+[ext_resource type="Texture2D" uid="uid://oc1j7oab1nui" path="res://modules/levels/textures/panel/sci-fi-panel1/sci-fi-panel1_roughness.png" id="4_80w1c"]
+
+[resource]
+albedo_texture = ExtResource("1_kb7x1")
+metallic = 1.0
+metallic_texture = ExtResource("3_86par")
+roughness_texture = ExtResource("4_80w1c")
+normal_enabled = true
+normal_texture = ExtResource("3_86par")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_4powj")
+texture_filter = 2
