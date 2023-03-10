@@ -3,7 +3,7 @@ extends Node
 @onready var hud : Control = $HUD
 @onready var menu : Control = $Menu
 @onready var main_3d : Node3D = $Main3D
-@onready var button = $Menu/Button
+@onready var button : Button = $Menu/Button
 @onready var button2 : Button = $Menu/Button2
 
 var level_instance : Node3D 
@@ -35,9 +35,11 @@ func _on_button_2_pressed():
 	load_player()
 	close_load_menu()
 
-func _input(quit_game):
-	get_tree
-
+func _unhandled_input(event):
+	if Input.is_action_just_pressed("quit_game"):
+		print("quit now")
+		get_tree().get_root().propagate_notification(NOTIFICATION_WM_CLOSE_REQUEST)
+		get_tree().quit()
 
 func _on_button_pressed():
 	load_level("tutorial_island")
