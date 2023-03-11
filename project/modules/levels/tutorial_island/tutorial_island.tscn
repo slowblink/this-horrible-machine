@@ -660,7 +660,8 @@ data = SubResource("VoxelGIData_6vufj")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.999966, 0.00822055, 0, -0.00822055, 0.999966, 0, 0, 5.53861)
-light_color = Color(1, 0, 0, 1)
+light_energy = 0.1
+light_volumetric_fog_energy = 0.1
 shadow_enabled = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
