@@ -614,7 +614,7 @@ func build_entity_collision_shape_nodes() -> Array:
 						concave = true
 					
 					if entity_definition.spawn_type == QodotFGDSolidClass.SpawnType.MERGE_WORLDSPAWN:
-						# TODO: Find the worldspawn object instead of assuming index 0
+
 						node = entity_nodes[0] as Node
 		
 		# don't create collision shapes that wont be attached to a CollisionObject3D as they are a waste

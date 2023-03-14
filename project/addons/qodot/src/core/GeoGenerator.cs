@@ -53,7 +53,7 @@ namespace Qodot
 				}
 			}
 			
-			// TODO: Multithread?
+			//
 			GenerateAndFindCenters(0, entitySpan.Length);
 			WindFaceVertices(0, entitySpan.Length);
 			IndexFaceVertices(0, entitySpan.Length);

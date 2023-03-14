@@ -4,7 +4,7 @@ class_name FlyAbility3D
 ## Ability that gives free movement to [CharacterController 3D] completely ignoring gravity.
 
 ## Speed modifier while this ability is active
-@export var speed_modifier := 2.0
+@export var speed_modifier := 1.0
 
 ## Get actual speed modifier
 func get_speed_modifier() -> float:

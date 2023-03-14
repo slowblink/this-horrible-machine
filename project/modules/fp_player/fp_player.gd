@@ -13,7 +13,7 @@ class_name Player
 ## This script also adds submerged and emerged signals to change the 
 ## [Environment] when we are in the water.
 
-# TODO rebuild custom version of this script and object as a module
+
 
 @export var input_back_action_name := "move_backward"
 @export var input_forward_action_name := "move_forward"

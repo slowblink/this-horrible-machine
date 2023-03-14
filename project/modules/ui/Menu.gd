@@ -1,5 +1,6 @@
 extends Control
 
+# TODO make a level select menu that can be accessed after launch so that level ends can be linked back to it
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

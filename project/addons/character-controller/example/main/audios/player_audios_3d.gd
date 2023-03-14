@@ -5,6 +5,7 @@ class_name PlayerAudios3D
 ## Using an [AudioInteract] array synchronized with physic_materials array to 
 ## identify different sound structures for each type of physical material.
 
+
 @onready var step_stream: AudioStreamPlayer3D = get_node(NodePath("Step"))
 @onready var land_stream: AudioStreamPlayer3D = get_node(NodePath("Land"))
 @onready var jump_stream: AudioStreamPlayer3D = get_node(NodePath("Jump"))
